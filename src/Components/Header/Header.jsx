@@ -7,7 +7,6 @@ import LowerHeader from "./LowerHeader";
 import { BiCart } from "react-icons/bi";
 import { DataContext } from "../DataProvider/DataProvider";
 import { auth } from "../../Utility/firebase";
-
 const Header = () => {
   const [{ user, basket }, dispatch] = useContext(DataContext);
   const totalItem = basket?.reduce((amount, item) => {
